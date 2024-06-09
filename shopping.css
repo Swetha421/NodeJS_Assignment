@@ -1,0 +1,22 @@
+body{
+    text-align: center;
+    
+}
+.shop{
+  border-style:inset;
+  border-width: 5px;
+  background-color: rgb(91, 100, 69);
+
+}
+
+.btn{
+    border-width: 5px;
+   background-color: blue;
+   color: beige;
+  
+}
+#t1{
+    text-align: center;
+padding: 10px;
+border-spacing: 30px;
+}

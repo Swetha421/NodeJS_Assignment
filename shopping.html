@@ -1,0 +1,58 @@
+<!-- Create a shopping cart application using only HTML, CSS, and JavaScript. The
+application will have a front-end interface where users can select items from dropdown lists,
+specify quantities, view the cart items, and see the total cart value. Use a data structure like a
+Map to manage the cart items.
+User Interface: Dropdown lists can be used for selecting items and input fields for specifying
+quantities. Display the cart items in a table, including the item name, quantity, individual item
+price, and total price for each item. Display the total cart value at the bottom of the page. Style
+the application using CSS to ensure a clean and user-friendly interface.
+ -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="shopping.css">
+</head>
+<body><center>
+    <h1>SHOPPING CART</h1>
+    <div class="shop">
+        <label for="s1">Select item</label>
+        <select name="" id="s1" >
+   <option value="">Please select--</option>              
+<option value="Milk">Milk</option>
+<option value="Biscuit">Biscuit</option>
+<option value="Butter">Butter</option>
+<option value="Soap">Soap</option>
+ </select>
+ <br><br>
+        <label for="q1">Quantity</label>
+<input type="number" id="q1">
+<br><br>
+<button class="btn" onclick="addcart()">Add to Cart</button>
+
+    </div>
+    <div id="carttab">
+        <h2>My Cart</h2>
+        <table id="t1"> 
+            <tr>
+                <th>ITEM</th>
+                <th>QUANTITY</th>
+                <th>PRICE</th>
+                <th>TOTAL</th>
+            </tr>
+        
+        </table>
+        <br>
+        <p id="total">Total: Rs 0</p>
+
+    </div>
+</center>
+
+<script src="shopping.js"></script>
+</body>
+</html>
